@@ -1,7 +1,37 @@
 <!DOCTYPE html>
 
+  
 <html lang="en">
 <head><meta charset="utf-8"/>
+  <style>
+    /* Smooth animation */
+    .jp-Cell-inputWrapper {
+      overflow: hidden;
+      transition: max-height 0.25s ease;
+    }
+    
+    /* Chevron button */
+    .toggle-code {
+      cursor: pointer;
+      font-size: 0.9rem;
+      margin: 6px 0;
+      user-select: none;
+      color: #1f77b4;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    
+    /* Chevron style */
+    .toggle-code span {
+      display: inline-block;
+      transition: transform 0.25s ease;
+    }
+    .toggle-code.open span {
+      transform: rotate(90deg);
+    }
+    </style>
+    
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>training_for_marathon_swimming</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
@@ -9401,5 +9431,54 @@ Aside from the normal filtering I've used repeatedly to isolate the period befor
 </div>
 
 </main>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const inputAreas = document.querySelectorAll("div.jp-InputArea");
+  
+    inputAreas.forEach((inputArea) => {
+      // Only CODE cells
+      if (!inputArea.querySelector("pre")) return;
+  
+      const wrapper = inputArea.closest(".jp-Cell-inputWrapper");
+      if (!wrapper) return;
+  
+      // Expand by default
+      wrapper.style.overflow = "hidden";
+      wrapper.style.maxHeight = wrapper.scrollHeight + "px";
+  
+      const btn = document.createElement("div");
+      btn.className = "toggle-code";
+      btn.textContent = "Hide code";  // because code is open initially
+  
+      btn.onclick = () => {
+        const collapsed = wrapper.style.maxHeight === "0px" || wrapper.style.maxHeight === "0";
+  
+        if (collapsed) {
+          wrapper.style.maxHeight = wrapper.scrollHeight + "px";
+          btn.textContent = "Hide code";
+        } else {
+          wrapper.style.maxHeight = "0";
+          btn.textContent = "Show code";
+        }
+      };
+  
+      wrapper.parentNode.insertBefore(btn, wrapper);
+    });
+  
+    // Optional: adjust maxHeight after fonts/images finish loading
+    window.addEventListener("load", () => {
+      inputAreas.forEach((inputArea) => {
+        if (!inputArea.querySelector("pre")) return;
+        const wrapper = inputArea.closest(".jp-Cell-inputWrapper");
+        if (wrapper) {
+          wrapper.style.maxHeight = wrapper.scrollHeight + "px";
+        }
+      });
+    });
+  });
+  </script>
+  
+  
+  
 </body>
 </html>
