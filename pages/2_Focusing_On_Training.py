@@ -90,7 +90,8 @@ col1, col2, col3 = st.columns([1,3,1])
 with col2:
     st.pyplot(g.figure, use_container_width=False)
 
-st.markdown(FIRST_LOOK_TEXT_2)
+st.markdown(FOCUSING_ON_TRAINING_TEXT_2)
+
 with st.expander("View Query"):
     st.code(FOCUSING_ON_TRAINING_QUERY)
     st.divider()
