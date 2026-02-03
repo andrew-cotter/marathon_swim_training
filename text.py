@@ -199,7 +199,7 @@ WEEKLY_SCHEDULE_TEXT_2 = (
     "afternoon and evening, not to mention getting to my swimming spot is more of a headache with afternoon traffic.\n\n"
     "Lifting is a bit more spread out during the week, I remember years where I would wake up at an ungodly hour to swim and "
     "lift before going to work, especially in 2023. Luckily, I moved in 2024 to a location where going to the gym was much "
-    "more convenient, at various times of th day and I therefore shifted to lifting after work.\n\n"
+    "more convenient, at various times of the day and I therefore shifted to lifting after work.\n\n"
     "My activities are much more spread throughout the day on weekends. However, the vast majority of my training was still done "
     "in the mornings - just slightly later. It's also noteworthy that Mondays and Fridays appear to be a bit more spread "
     "out when compared to Tuesday - Thursday, I'm guessing that is because those days are more likely to be work holidays."
@@ -208,7 +208,7 @@ WEEKLY_SCHEDULE_TEXT_2 = (
 ##CONSISTENCY AND REST
 CONSISTENCY_TEXT_1 = (
     "As you might have figured out by now, I spent a significant amount of time training. Despite the volume, the vast majority of my "
-    "activities were under 1 hour for all three years, so much of my volume came from consistency doing shorter activities "
+    "activities were under 1 hour for all three years, so much of my volume came from consistently doing shorter activities "
     "every day and sometimes doing multiple activities in the same day (lifting + swimming, sometimes two swim sessions). "
     "Each training year only had a handful of 2+ hour swims sprinkled in.\n\n"
     "Rest is also very important, and it is something that I'm looking to do better at in 2026. I've always taken a mindset "
@@ -293,7 +293,7 @@ ACTIVITIES_PER_WEEK_TEXT_1 = (
 )
 
 REST_TEXT_1 = (
-    "Now that we saw how many days I was active, logging any type of activity, let's take a look at how many days I was resting. "
+    "Now that we've seen how many days I was active, logging any type of activity, let's take a look at how many days I was resting. "
     "I will look at resting through two different lenses here:\n\n"
     "1. Days with no logged activities\n"
     "2. Days with exactly 1 activity, a swim under 30 minutes. \n\n"
@@ -634,9 +634,9 @@ STREAKS_TEXT_2 = (
 "As a quick sanity check, it's encouraging to see that all of my active streaks are shorter than or equal to my raw streaks.\n\n"
 "It is interesting to see 2024 where the same date ranges satisfied both categories for all of my 3 longest streaks. This feature is backed up by the fact that my active recovery day percentage in 2024 was just 5.2%, about half of what it was for other years. In other words, I didn't have many short recovery swims to extend my active streaks into longer raw streaks.\n\n"
 "We do see this 'streak extension' in other years though, such as in late spring of 2023. I have two active streaks of 10 days spanning April-May, but including short swims extended each of these by 2 and 3 days, respectively.\n\n"
-"My streaks got progressively longer over the years for both categories. Noteworthy in 2025 is that that my longest raw streak (23 days) came immediately after my longest active streak (17 days) (coincidentally, that was also my second longest raw streak) in early 2025. " 
+"My streaks got progressively longer over the years for both categories. Noteworthy in 2025 is that my longest raw streak (23 days) came immediately after my longest active streak (17 days) (coincidentally, that was also my second longest raw streak) in early 2025. " 
 "In fact, it was just 2 days of separation between the end of the 17 day active streak and the start of the 23 day raw streak. That is 40 days of activity with only 2 days of rest mixed in... yikes!\n\n"
-"A very different story in 2023, where my logest active streak (11 days) came in late February while the longest raw streak (13 days) started in mid May.\n\n"
+"A very different story in 2023, where my longest active streak (11 days) came in late February while the longest raw streak (13 days) started in mid May.\n\n"
 "As I've mentioned before, I'm hoping to prioritize rest a bit more in 2026. So, I hope that we will see the streak numbers (especially the active streak) come down a bit compared to 2025."
 )
 
