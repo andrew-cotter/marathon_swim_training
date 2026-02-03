@@ -1,0 +1,219 @@
+/* Custom theme to make Streamlit look less "Streamlit-y" */
+
+/* Remove Streamlit branding
+footer {visibility: hidden;}
+header {visibility: hidden;} */
+
+/* Custom typography */
+h1, h1 * {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+    font-weight: 1000 !important;
+    color: #0F4C5C !important;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem !important;
+    margin-top: 0 !important;
+}
+
+h2, h2 * {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+    font-weight: 600 !important;
+    color: #0F4C5C !important;
+    letter-spacing: -0.01em;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.25rem !important;
+}
+
+h3, h3 * {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+    font-weight: 600 !important;
+    color: #0F4C5C !important;
+    letter-spacing: -0.01em;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.25rem !important;
+}
+
+/* Streamlit-specific heading selectors */
+.stApp h1,
+.stApp h2,
+.stApp h3,
+[data-testid="stHeader"] h1,
+[data-testid="stHeader"] h2,
+[data-testid="stHeader"] h3,
+.element-container h1,
+.element-container h2,
+.element-container h3,
+.main h1,
+.main h2,
+.main h3 {
+    color: #0F4C5C !important;
+    margin-top: 0 !important;
+}
+
+/* Reduce spacing after headers in Streamlit containers */
+.element-container:has(h1),
+.element-container:has(h2),
+.element-container:has(h3) {
+    margin-bottom: 0.25rem !important;
+}
+
+/* Reduce spacing in Streamlit markdown containers after headers */
+.element-container:has(h1) + .element-container,
+.element-container:has(h2) + .element-container,
+.element-container:has(h3) + .element-container {
+    margin-top: 0 !important;
+}
+
+/* Body text styling */
+p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
+    color: #2C3E50;
+    font-size: 1rem;
+}
+
+/* Markdown lists - match body text styling */
+ul, ol {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
+    color: #2C3E50;
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+li {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
+    color: #2C3E50;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Links */
+a {
+    color: #5C9EAD;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0A2540;
+    text-decoration: underline;
+}
+
+/* Main container */
+.main .block-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background-color: #F8F9FA;
+}
+
+/* Sidebar navigation links - make them bolder */
+[data-testid="stSidebarNav"] a {
+    font-weight: 700 !important;
+    font-size: 1rem;
+}
+
+[data-testid="stSidebarNav"] li {
+    font-weight: 700 !important;
+}
+
+/* Alternative selector for sidebar nav links */
+.css-1lcbmhc a,
+.css-1lcbmhc .css-1lcbmhc a,
+section[data-testid="stSidebar"] nav a {
+    font-weight: 700 !important;
+}
+
+/* Dividers */
+hr {
+    border: none;
+    border-top: 2px solid #E1E8ED;
+    margin: 2rem 0;
+}
+
+/* Code blocks */
+code {
+    background-color: #F5F7FA;
+    color: #0A2540;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+}
+
+pre {
+    background-color: #F5F7FA;
+    border: 1px solid #E1E8ED;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    font-weight: 600;
+    color: #0A2540;
+}
+
+/* Images */
+img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Captions */
+figcaption {
+    color: #6C757D;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Buttons - if you add any */
+button {
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F5F7FA;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CBD5E0;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #A0AEC0;
+}
+
+/* Remove Streamlit's default styling quirks */
+.stApp {
+    background-color: #FFFFFF;
+}
+
+/* Improve spacing */
+.element-container {
+    margin-bottom: 1.5rem;
+}
+
+/* Markdown content */
+.markdown-text-container {
+    line-height: 1.8;
+}
+
+/* Column spacing */
+[data-testid="column"] {
+    padding: 0 1rem;
+}

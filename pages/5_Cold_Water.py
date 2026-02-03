@@ -7,6 +7,7 @@ warnings.filterwarnings('ignore')
 import streamlit as st
 from text import *
 
+load_custom_css()
 st.header("Cold Water")
 st.markdown(COLD_WATER_TEXT_1)
 
@@ -44,7 +45,7 @@ leg = plt.legend(
 
 leg.set_title(None)
 
-col1, col2, col3 = st.columns([1,3,1])
+col1, col2, col3 = st.columns([1,6,1])
 with col2:
     st.pyplot(plot.get_figure())
 

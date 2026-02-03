@@ -7,6 +7,7 @@ import streamlit as st
 from text import *
 from plot_config import set_plot_style
 
+load_custom_css()
 set_plot_style()
 st.header("A First Look")
 st.markdown(FIRST_LOOK_TEXT_1)
@@ -42,7 +43,7 @@ leg = plt.legend(
 
 leg.set_title(None)
 
-col1, col2, col3 = st.columns([1,3,1])
+col1, col2, col3 = st.columns([1,6,1])
 with col2:
     st.pyplot(plot.get_figure())
 

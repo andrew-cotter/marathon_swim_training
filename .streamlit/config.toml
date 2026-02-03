@@ -1,2 +1,11 @@
-[client]
-toolbarMode = "developer"
+[theme]
+# Primary colors - deep ocean blue theme
+primaryColor = "#0A2540"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#0F4C5C"
+textColor = "#1A1A1A"
+font = "sans serif"
+
+[theme.sidebar]
+textColor = "#FFFFFF"
+baseFontWeight = 700

@@ -1,5 +1,9 @@
 import streamlit as st
 from text import *
+from streamlit_funcs.helpers import load_custom_css
+
+# Load custom CSS
+load_custom_css()
 
 st.set_page_config(page_title="Training for Marathon Swimming", page_icon=":swimmer:", layout="wide")
 st.title("Training for Marathon Swimming")

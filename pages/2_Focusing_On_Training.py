@@ -7,6 +7,7 @@ import streamlit as st
 from text import *
 from plot_config import set_plot_style
 
+load_custom_css()
 set_plot_style()
 st.header("Focusing on Training")
 st.markdown(FOCUSING_ON_TRAINING_TEXT_1)
@@ -86,7 +87,7 @@ g.fig.suptitle(
 
 g.fig.subplots_adjust(hspace=0.35, top=0.9)
 
-col1, col2, col3 = st.columns([1,3,1])
+col1, col2, col3 = st.columns([1,6,1])
 with col2:
     st.pyplot(g.figure, use_container_width=False)
 

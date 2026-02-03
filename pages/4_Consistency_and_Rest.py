@@ -8,6 +8,7 @@ import streamlit as st
 from text import *
 from plot_config import set_plot_style
 
+load_custom_css()
 set_plot_style()
 st.header("Consistency and Rest Days")
 st.markdown(CONSISTENCY_TEXT_1)
@@ -30,7 +31,7 @@ css = '''
 st.markdown(css, unsafe_allow_html=True)
 
 with tab1:
-    fig, ax = plt.subplots(figsize=(8.5, 9))
+    fig, ax = plt.subplots(figsize=(8.5, 7))
     #Stacked bar chart
     bottom=None
     for col in df.columns[1:]:
@@ -77,7 +78,7 @@ with tab1:
 
     leg.set_title(None)
 
-    col1, col2, col3 = st.columns([1,3,1])
+    col1, col2, col3 = st.columns([1,6,1])
     with col2:
         st.pyplot(fig)
 
@@ -152,7 +153,7 @@ with tab2:
 
     leg.set_title(None)
 
-    col1, col2, col3 = st.columns([1,3,1])
+    col1, col2, col3 = st.columns([1,6,1])
     with col2:
         st.pyplot(fig)
     st.markdown(REST_TEXT_2)
@@ -251,7 +252,7 @@ with tab3:
     leg.set_title(None)
 
     plt.tight_layout()
-    col1, col2, col3 = st.columns([1,3,1])
+    col1, col2, col3 = st.columns([1,6,1])
     with col2:
         st.pyplot(fig)
     
