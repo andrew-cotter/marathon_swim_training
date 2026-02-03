@@ -131,6 +131,8 @@ with tab2:
                 )
         bottom = df[col] if bottom is None else bottom + df[col]
 
+        plt.xticks(ticks=[0,5,10,15,20,25,30], labels=["0%", "5%", "10%", "15%", "20%", "25%", "30%"])
+
     #Formatting
     sns.despine(ax=ax)
     plt.xticks(rotation=45, ha="right")
