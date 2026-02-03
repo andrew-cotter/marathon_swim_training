@@ -32,7 +32,7 @@ sns.despine()
 plt.ylim(0, 6.5)
 plt.ylabel("")
 plt.xlabel("")
-plt.title("Duration of Longest Swim vs Water Temperature", loc="left", fontweight="bold")
+plt.title("Duration of longest swim vs water temperature (°F)", loc="left", fontweight="bold")
 leg = plt.legend(
     ncol=3,
     frameon=False,
