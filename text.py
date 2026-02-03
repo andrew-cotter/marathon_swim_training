@@ -156,7 +156,7 @@ FOCUSING_ON_TRAINING_QUERY_DESCRIPTION = (
 
 FOCUSING_ON_TRAINING_TEXT_2 = (
     "There are a handful of interesting trends to highlight here:\n\n"
-    "- 2023 has a high volume of swims, but is lacking in the lenghts of those sessions. My logest swims for that year were all under 3 hours, while 2024 and 2025 have a handful of swims in the 3-6 hour range.\n\n" 
+    "- 2023 has a high volume of swims, but is lacking in the lengths of those sessions. My longest swims for that year were all under 3 hours, while 2024 and 2025 have a handful of swims in the 3-6 hour range.\n\n" 
     "- 2024 shows some pretty long pool workouts compared to 2023 and 2025 as well as a decrease in open water swims. The reasons for this will be discussed later on.\n\n"
     "- The number of lifting activities remains relatively stable throughout the three years, although they were shorter on average in 2023 compared to other years.\n\n"
 )
