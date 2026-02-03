@@ -131,7 +131,7 @@ with tab2:
                 )
         bottom = df[col] if bottom is None else bottom + df[col]
 
-        # plt.yticks(ticks=[0,5,10,15,20,25,30], labels=["0%", "5%", "10%", "15%", "20%", "25%", "30%"])
+        plt.yticks(ticks=[0,5,10,15,20,25,30], labels=["0%", "5%", "10%", "15%", "20%", "25%", "30%"])
 
     #Formatting
     sns.despine(ax=ax)

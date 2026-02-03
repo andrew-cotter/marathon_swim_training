@@ -456,7 +456,7 @@ REST_TEXT_2 = (
     "less of the 'active recovery' short swims in 2024.\n\n"
     "2025 was my lowest proportion of zero activity days at just 12%, which averages less than 1 per week. However, it "
     "did see my highest percentage of short active recovery swims.\n\n"
-    "Overall, it seems like I rested about 18%-20% of the days in my training window across all three years - surprisingly "
+    "Overall, it seems like I rested about 20-23% of the days in my training window across all three years - surprisingly "
     "small variability! I'm hoping to up this number a bit in 2026."
 )
 
