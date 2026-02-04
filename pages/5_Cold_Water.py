@@ -2,8 +2,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import warnings
 from streamlit_funcs.helpers import *
-from sqlalchemy import text
-warnings.filterwarnings('ignore')
+
+warnings.filterwarnings("ignore")
 import streamlit as st
 from text import *
 
@@ -13,26 +13,25 @@ st.markdown(COLD_WATER_TEXT_1)
 
 conn = st.connection("mysql", type="sql")
 
-df = query_db(
-    COLD_WATER_QUERY,
-    conn
-)
+df = query_db(COLD_WATER_QUERY, conn)
 
-plot=sns.barplot(
+plot = sns.barplot(
     data=df,
     x="temp",
     y="longestSwim",
     hue="year",
     hue_order=["2023", "2024", "2025"],
     width=0.6,
-    edgecolor="black"
+    edgecolor="black",
 )
 sns.despine()
 
 plt.ylim(0, 6.5)
 plt.ylabel("")
 plt.xlabel("")
-plt.title("Duration of longest swim vs water temperature (°F)", loc="left", fontweight="bold")
+plt.title(
+    "Duration of longest swim vs water temperature (°F)", loc="left", fontweight="bold"
+)
 leg = plt.legend(
     ncol=3,
     frameon=False,
@@ -45,7 +44,7 @@ leg = plt.legend(
 
 leg.set_title(None)
 
-col1, col2, col3 = st.columns([1,6,1])
+col1, col2, col3 = st.columns([1, 6, 1])
 with col2:
     st.pyplot(plot.get_figure())
 

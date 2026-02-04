@@ -2,7 +2,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import warnings
 from streamlit_funcs.helpers import *
-warnings.filterwarnings('ignore')
+
+warnings.filterwarnings("ignore")
 import streamlit as st
 from text import *
 from plot_config import set_plot_style
@@ -13,18 +14,15 @@ st.header("A First Look")
 st.markdown(FIRST_LOOK_TEXT_1)
 
 conn = st.connection("mysql", type="sql")
-df = query_db(
-    FIRST_LOOK_QUERY,
-    conn
-)
+df = query_db(FIRST_LOOK_QUERY, conn)
 
-fix, ax = plt.subplots(figsize=(12,5))
+fix, ax = plt.subplots(figsize=(12, 5))
 
 plot = sns.swarmplot(
-    data = df,
+    data=df,
     x="year",
     y="duration_hr",
-    hue ="type",
+    hue="type",
     size=3,
 )
 plt.ylabel("Duration (Hours)")
@@ -43,11 +41,12 @@ leg = plt.legend(
 
 leg.set_title(None)
 
-col1, col2, col3 = st.columns([1,6,1])
+col1, col2, col3 = st.columns([1, 6, 1])
 with col2:
     st.pyplot(plot.get_figure())
 
 st.markdown(FIRST_LOOK_TEXT_2)
+
 with st.expander("View Query"):
     st.code(FIRST_LOOK_QUERY)
     st.divider()

@@ -27,7 +27,6 @@ INTRO_TEXT_2 = (
     "The only ground-rule that I set for myself with this is that I need to focus on data manipulation in SQL "
     "instead of my preferred pandas. Therefore, if you are interested in the code, you will see a lot of SQL in this report, along with some seaborn and "
     "matplotlib for data visualization. No pandas, other than turning the query results into dataframes for plotting."
-    
 )
 
 ##FIRST LOOK
@@ -156,7 +155,7 @@ FOCUSING_ON_TRAINING_QUERY_DESCRIPTION = (
 
 FOCUSING_ON_TRAINING_TEXT_2 = (
     "There are a handful of interesting trends to highlight here:\n\n"
-    "- 2023 has a high volume of swims, but is lacking in the lengths of those sessions. My longest swims for that year were all under 3 hours, while 2024 and 2025 have a handful of swims in the 3-6 hour range.\n\n" 
+    "- 2023 has a high volume of swims, but is lacking in the lengths of those sessions. My longest swims for that year were all under 3 hours, while 2024 and 2025 have a handful of swims in the 3-6 hour range.\n\n"
     "- 2024 shows some pretty long pool workouts compared to 2023 and 2025 as well as a decrease in open water swims. The reasons for this will be discussed later on.\n\n"
     "- The number of lifting activities remains relatively stable throughout the three years, although they were shorter on average in 2023 compared to other years.\n\n"
 )
@@ -167,9 +166,7 @@ PUTTING_IN_THE_HOURS_TEXT_1 = (
     "where in the week I was able to fit all of it in."
 )
 
-TRAINING_VOLUME_TEXT_1 = (
-    "Here I will look at my cumulative training hours across all activities for each of the three years."
-)
+TRAINING_VOLUME_TEXT_1 = "Here I will look at my cumulative training hours across all activities for each of the three years."
 
 TRAINING_VOLUME_TEXT_2 = (
     "A few observations on this plot:\n\n"
@@ -279,7 +276,7 @@ ORDER BY year;
 ACTIVITIES_PER_WEEK_QUERY_DESCRIPTION = (
     "With this query, I am calculating the average number of weekly activities I logged through the years breaking them out "
     "by activity type. The `WEEKOFYEAR` MySQL function was super useful here for getting the counts, and I am using the "
-    "`CASE WHEN` clauses in the final query to make a \"pivoted\" table that will be easier for plotting."
+    '`CASE WHEN` clauses in the final query to make a "pivoted" table that will be easier for plotting.'
 )
 
 ACTIVITIES_PER_WEEK_TEXT_1 = (
@@ -631,13 +628,13 @@ STREAKS_QUERY_DESCRIPTION = (
 )
 
 STREAKS_TEXT_2 = (
-"As a quick sanity check, it's encouraging to see that all of my active streaks are shorter than or equal to my raw streaks.\n\n"
-"It is interesting to see 2024 where the same date ranges satisfied both categories for all of my 3 longest streaks. This feature is backed up by the fact that my active recovery day percentage in 2024 was just 5.2%, about half of what it was for other years. In other words, I didn't have many short recovery swims to extend my active streaks into longer raw streaks.\n\n"
-"We do see this 'streak extension' in other years though, such as in late spring of 2023. I have two active streaks of 10 days spanning April-May, but including short swims extended each of these by 2 and 3 days, respectively.\n\n"
-"My streaks got progressively longer over the years for both categories. Noteworthy in 2025 is that my longest raw streak (23 days) came immediately after my longest active streak (17 days) (coincidentally, that was also my second longest raw streak) in early 2025. " 
-"In fact, it was just 2 days of separation between the end of the 17 day active streak and the start of the 23 day raw streak. That is 40 days of activity with only 2 days of rest mixed in... yikes!\n\n"
-"A very different story in 2023, where my longest active streak (11 days) came in late February while the longest raw streak (13 days) started in mid May.\n\n"
-"As I've mentioned before, I'm hoping to prioritize rest a bit more in 2026. So, I hope that we will see the streak numbers (especially the active streak) come down a bit compared to 2025."
+    "As a quick sanity check, it's encouraging to see that all of my active streaks are shorter than or equal to my raw streaks.\n\n"
+    "It is interesting to see 2024 where the same date ranges satisfied both categories for all of my 3 longest streaks. This feature is backed up by the fact that my active recovery day percentage in 2024 was just 5.2%, about half of what it was for other years. In other words, I didn't have many short recovery swims to extend my active streaks into longer raw streaks.\n\n"
+    "We do see this 'streak extension' in other years though, such as in late spring of 2023. I have two active streaks of 10 days spanning April-May, but including short swims extended each of these by 2 and 3 days, respectively.\n\n"
+    "My streaks got progressively longer over the years for both categories. Noteworthy in 2025 is that my longest raw streak (23 days) came immediately after my longest active streak (17 days) (coincidentally, that was also my second longest raw streak) in early 2025. "
+    "In fact, it was just 2 days of separation between the end of the 17 day active streak and the start of the 23 day raw streak. That is 40 days of activity with only 2 days of rest mixed in... yikes!\n\n"
+    "A very different story in 2023, where my longest active streak (11 days) came in late February while the longest raw streak (13 days) started in mid May.\n\n"
+    "As I've mentioned before, I'm hoping to prioritize rest a bit more in 2026. So, I hope that we will see the streak numbers (especially the active streak) come down a bit compared to 2025."
 )
 
 ##COLD WATER
