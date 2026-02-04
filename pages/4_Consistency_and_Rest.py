@@ -211,7 +211,7 @@ with tab3:
     ax.set_yticks(list(year_positions.values()))
     ax.set_yticklabels(list(year_positions.keys()))
     plt.gca().invert_yaxis()
-    plt.title("Activity streaks by year", loc="left", fontweight="bold", y=1.08)
+    plt.title("Activity streaks by year", loc="left", fontweight="bold", y=1.01)
 
     # Legend
     handles, labels = ax.get_legend_handles_labels()
@@ -224,7 +224,7 @@ with tab3:
         ncol=2,
         frameon=False,
         loc="upper left",
-        bbox_to_anchor=(-0.015, 1.12),
+        bbox_to_anchor=(0.5, 1.12),
         handletextpad=0.4,
         columnspacing=1.2,
         markerscale=2,

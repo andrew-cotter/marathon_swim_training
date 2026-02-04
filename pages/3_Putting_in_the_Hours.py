@@ -125,8 +125,10 @@ with tab2:
 
     for ax in g.axes.flat:
         ax.tick_params(labelbottom=True, labelsize=10)
-        ax.set_xticks([0, 3, 6, 9, 12, 15, 18, 21, 24])
-        ax.set_xticklabels([0, 3, 6, 9, 12, 15, 18, 21, 24])
+        ax.set_xticks([0, 3, 6, 9, 12, 15, 18, 21, 23])
+        ax.set_xticklabels(
+            ["Midnight", "3am", "6am", "9am", "12pm", "3pm", "6pm", "9pm", "11pm"]
+        )
 
     # Reduce gaps between facets
     g.fig.subplots_adjust(hspace=0.2)
