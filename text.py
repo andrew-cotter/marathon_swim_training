@@ -645,7 +645,9 @@ COLD_WATER_TEXT_1 = (
     "Now that we've seen how much rest I got, let's look at the longest streak of activities that I had in each training "
     "window. I'll do something similar here that I did with rest days and look at this through two lenses:\n\n"
     "1. A raw streak of days where I logged an activity regardless of duration\n"
-    "2. An 'active training' streak of days where I logged either A) a lifting session or B) a swim longer than 30 minutes."
+    "2. An 'active training' streak of days where I logged either A) a lifting session or B) a swim longer than 30 minutes. \n\n"
+    "Unfortunately, Garmin only saves temperatures in increments of °C, and the range that I train in only varies about 6-7°C"
+    "throughout the year, so it makes more sense to treat temperature as a categorical variable here."
 )
 
 COLD_WATER_QUERY = """
